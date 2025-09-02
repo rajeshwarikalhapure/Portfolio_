@@ -1,0 +1,234 @@
+/* Global */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  line-height: 1.6;
+  background: #f4f4f4;
+  color: #333;
+}
+
+/* Navbar */
+header {
+  background: #111;
+  color: #fff;
+  padding: 15px 20px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #00bcd4;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  font-size: 20px;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.nav-links li a:hover {
+  color: #00bcd4;
+}
+
+/* Hero */
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(to right, #00bcd4, #2196f3);
+  color: white;
+  padding: 20px;
+}
+
+.hero h1 span {
+  color: #ffeb3b;
+}
+.profile-pic {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;   /* makes it circular */
+  object-fit: cover;    /* ensures it fits inside */
+  border: 4px solid #fff;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+.profile-pic:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.4);
+  transition: 0.3s ease;
+}
+
+
+/* Sections */
+section {
+  padding: 80px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Skills */
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.skills-list span {
+  background: #00bcd4;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+/* Projects */
+.project-card {
+  background: white;
+  padding: 20px;
+  margin: 15px 0;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+.resume-btn {
+  margin-top: 20px;
+}
+
+.resume-btn .btn {
+
+  display: flexbox;
+  background: #007bff;  /* Blue button */
+  color: white;
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.resume-btn .btn:hover {
+  background: #0056b3; /* Darker blue on hover */
+  transform: scale(1.05);
+}
+
+/* Contact */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 400px;
+  margin: auto;
+}
+
+form input, form textarea, form button {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  background: #00bcd4;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+form button:hover {
+  background: #2196f3;
+}
+
+/* Footer */
+footer {
+  background: #111;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+/* ====== Dark Mode Toggle Button ====== */
+#darkModeToggle {
+  margin-left: 15px;
+  padding: 6px 12px;
+  border: none;
+  background: #00bcd4;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+
+#darkModeToggle:hover {
+  background: #2196f3;
+}
+
+/* ====== Dark Mode Styles ====== */
+body.dark {
+  background: #121212;
+  color: #e0e0e0;
+}
+
+body.dark header {
+  background: #1f1f1f;
+}
+
+body.dark .logo {
+  color: #ffeb3b;
+}
+
+body.dark .nav-links {
+  background: #1f1f1f;
+}
+
+body.dark .hero {
+  background: linear-gradient(to right, #333, #111);
+}
+
+body.dark .skills-list span {
+  background: #444;
+}
+
+body.dark .project-card {
+  background: #222;
+  color: #ddd;
+}
+
+body.dark form input,
+body.dark form textarea {
+  background: #333;
+  color: #fff;
+  border: 1px solid #555;
+}
+
+body.dark footer {
+  background: #1f1f1f;
+}
